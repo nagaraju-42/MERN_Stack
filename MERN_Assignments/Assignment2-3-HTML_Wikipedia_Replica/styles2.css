@@ -1,0 +1,285 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #202122;
+}
+
+a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p, table, ul {
+  line-height: 1.6;
+}
+
+h2 {
+    font-family: 'Linux Libertine','Georgia','Times',serif;
+    font-weight: normal;
+    font-size: 1.5em;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+h3 {
+    font-family: 'Linux Libertine','Georgia','Times',serif;
+    font-weight: normal;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+sup {
+    line-height: 1;
+    font-size: 0.8em;
+    vertical-align: super;
+}
+
+code {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 0.1em 0.4em;
+    font-family: monospace;
+    font-size: 0.95em;
+}
+
+pre {
+    background-color: #f8f9fa;
+    border: 1px solid #eaecf0;
+    padding: 15px;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+pre code {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+
+/* Header */
+.wiki-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  /* border-bottom: 1px solid purple; */
+}
+
+.wiki-header-left, .wiki-header-center, .wiki-header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+.logo-link:hover { text-decoration: none; }
+
+.globe {
+  width: 50px;
+}
+
+.wiki-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.wordmark {
+  width: 110px;
+}
+
+.subtitle {
+  font-size: 12px;
+  font-family: sans-serif;
+  margin-top: -2px;
+}
+
+.wiki-header-center {
+  flex-grow: 1;
+  max-width: 550px;
+  padding: 0 20px;
+}
+
+.wiki-header-search {
+  display: flex;
+  width: 100%;
+  border: 1px solid #a2a9b1;
+  border-radius: 2px;
+}
+
+.wiki-header-search input {
+  border: none;
+  padding: 8px 10px;
+  font-size: 14px;
+  width: 100%;
+  outline: none;
+}
+
+.wiki-header-search button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  border-left: 1px solid #a2a9b1;
+  font-size: 14px;
+}
+
+.wiki-header-right a {
+  font-size: 13px;
+}
+
+.dots {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.content-columns {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start; 
+}
+
+.main-text {
+  flex-grow: 1; 
+}
+
+.article-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #a2a9b1;
+    margin-bottom: 10px;
+}
+
+h1 {
+  font-family: 'Linux Libertine','Georgia','Times',serif;
+  font-size: 2.2em;
+  font-weight: normal;
+  margin: 10px 0;
+  border-bottom: none;
+}
+
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 10px;
+  border: 1px solid #a2a9b1;
+  border-radius: 2px;
+  font-size: 13px;
+  margin-top: 10px;
+  background: #f8f9fa;
+}
+
+/* Page Tabs Navigation */
+.page-tabs {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #a2a9b1;
+  margin-bottom: 15px;
+}
+.tabs-left, .tabs-right {
+    display: flex;
+    gap: 15px;
+}
+.page-tabs a {
+    padding: 10px 5px;
+    font-size: 13px;
+    margin-bottom: -1px; 
+    border-bottom: 1px solid transparent;
+}
+.page-tabs a.active-tab {
+    border-bottom: 1px solid #202122;
+}
+
+
+
+.right-column {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.sidebar {
+  font-size: 0.9em;
+}
+
+.infobox {
+  background-color: #f8f9fa;
+  border: 1px solid #a2a9b1;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.infobox-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Linux Libertine','Georgia','Times',serif;
+}
+
+.infobox table {
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.infobox table td {
+    padding: 5px 0;
+    border-top: 1px solid #eaecf0;
+}
+
+
+.side-image {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #ddd;
+    padding: 5px;
+    background-color: #f8f9fa;
+}
+.side-image img {
+    width: 100%;
+    display: block;
+}
+.side-image figcaption {
+    font-size: 0.9em;
+    color: #333;
+    padding-top: 5px;
+    text-align: left;
+}
+
+main {
+    transform: scale(0.9);
+}

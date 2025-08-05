@@ -1,0 +1,81 @@
+body {
+      background: #c5e2fb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .drawing-container {
+      display: flex;
+      gap: 60px;
+    }
+
+
+    .smile {
+      position: relative;
+      width: 130px;
+      height: 130px;
+      background: yellow;
+      border-radius: 50%;
+      border: 4px solid #333;
+      box-shadow: 0 5px 12px #2223;
+    }
+    .smile .eye {
+      position: absolute;
+      width: 16px; height: 19px;
+      background: #222;
+      border-radius: 50%;
+      top: 40px;
+    }
+    .smile .eye.left { left: 32px; }
+    .smile .eye.right { right: 32px; }
+    .smile .mouth {
+      position: absolute;
+      left: 30px; top: 63px;
+      width: 70px; height: 36px;
+      border-bottom: 5px solid #333;
+      border-radius: 0 0 40px 40px;
+    }
+
+
+    .apple {
+      position: relative;
+      width: 100px;
+      height: 110px;
+      margin-top: 12px;
+    }
+    .apple .fruit {
+      width: 80px;
+      height: 90px;
+      background: lightcoral;
+      border-radius: 60px 60px 65px 65px / 54px 54px 90px 90px;
+      position: absolute;
+      left: 10px; top: 17px;
+      border: 4px solid #781c1c;
+      box-shadow: 0 5px 9px #781c1c33;
+    }
+    .apple .shine {
+      width: 14px; height: 26px;
+      background: #fff8;
+      border-radius: 60%;
+      position: absolute;
+      left: 25px; top: 30px;
+      transform: rotate(-20deg);
+    }
+    .apple .stem {
+      width: 10px; height: 24px;
+      background: #5e3e22;
+      position: absolute;
+      left: 45px; top: 0;
+      border-radius: 7px 7px 3px 3px;
+      transform: rotate(-10deg);
+    }
+    .apple .leaf {
+      width: 30px; height: 16px;
+      background: green;
+      position: absolute;
+      left: 60px; top: 5px;
+      border-radius: 0 16px 16px 20px;
+      transform: rotate(22deg);
+    }

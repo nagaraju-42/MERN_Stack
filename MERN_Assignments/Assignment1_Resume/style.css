@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+}
+h2 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+.section-title {
+    font-size: 18px;
+    text-decoration: underline;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+table[border="0"] th, table[border="0"] td {
+    border: none;
+}
+ul {
+    margin-top: 0;
+}
